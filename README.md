@@ -24,6 +24,10 @@ To use `files-to-prompt`, provide the path to one or more files or directories y
 ```bash
 files-to-prompt path/to/file_or_directory [path/to/another/file_or_directory ...]
 ```
+OR 
+'''bash
+files-to-prompt **/*.py -o output_llm.txt'''
+- this will do all .py files in folders (so only 2 layers deep)
 
 This will output the contents of every file, with each file preceded by its relative path and separated by `---`.
 
